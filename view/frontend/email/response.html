@@ -1,0 +1,53 @@
+<!--@subject {{trans "Thank you for your enquiry"}} @-->
+<!--@vars {
+"var data.comment":"Comment",
+"var data.email":"Sender Email",
+"var data.name":"Sender Name",
+"var data.telephone":"Sender Telephone",
+} @-->
+
+{{template config_path="design/email/header_template"}}
+
+<table class="message-details">
+    <tr>
+        <td>Hi <strong>{{var data.name}}</strong>,</td>
+    </tr>
+    <tr><td></td></tr>
+    <tr><td></td></tr>
+    <tr><td></td></tr>
+    <tr>
+        <td>Thank you for your query. One of our staff members will get back to you shortly.</td>
+    </tr>
+    <tr><td></td></tr>
+    <tr><td></td></tr>
+    <tr><td></td></tr>
+    <tr>
+        <td><strong>{{trans "Name :"}}</strong> {{var data.name}}</td>
+    </tr>
+    <tr>
+        <td><strong>{{trans "Email :"}}</strong> {{var data.email}}</td>
+    </tr>
+    <tr>
+        <td><strong>{{trans "Phone :"}}</strong> {{var data.telephone}}</td>
+    </tr>
+    <tr>
+        <td><strong>{{trans "Message :"}}</strong> {{var data.comment}}</td>
+    </tr>
+    <tr><td></td></tr>
+    <tr><td></td></tr>
+    <tr><td></td></tr>
+    <tr>
+        <td>Kind regards,</td>
+    </tr>
+    <tr>
+        <td>Binstellar</td>
+    </tr>
+    <tr><td></td></tr>
+    <tr><td></td></tr>
+    <tr><td></td></tr>
+    <tr>
+        <td>Visit: <u>https://binstellar.com/</u></td>
+    </tr>
+</table>
+
+{{template config_path="design/email/footer_template"}}
